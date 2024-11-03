@@ -1,0 +1,17 @@
+export NGPUS=1
+sh dir.sh
+# CUDA_VISIBLE_DEVICES=0 python tools/test_net.py --config-file "configs/retrival_chinese.yaml"
+# CUDA_VISIBLE_DEVICES=0 python tools/test_net.py --config-file "configs/retrival_chinese_1019.yaml"
+CUDA_VISIBLE_DEVICES=0 python tools/test_net.py --config-file "configs/retrival_finetune_r18.yaml" #--ckpt "./Log/finetune_on_ic17_sn_r18_l4/model_0075000.pth"
+# CUDA_VISIBLE_DEVICES=2 python tools/test_net.py --config-file "configs/retrival_finetune2.yaml" #--ckpt "./Log/finetune_on_ic17_sn3/model_0077500.pth"
+# CUDA_VISIBLE_DEVICES=1 python tools/test_net.py --config-file "configs/retrival_finetune2.yaml" --ckpt "./Log/finetune_on_ic17_look_up/model_0075000.pth"
+# CUDA_VISIBLE_DEVICES=0 python tools/test_net.py --config-file "configs/retrival_finetune.yaml" --ckpt "./Log/finetune_ic13_15_17_boundary_aug/model_0002500.pth"
+# CUDA_VISIBLE_DEVICES=0 python tools/test_net.py --config-file "configs/retrival_finetune.yaml" --ckpt "./model_synthtext.pth"
+# CUDA_VISIBLE_DEVICES=0 python tools/test_net.py --config-file "configs/SiamRPNRetrieval.yaml"
+# CUDA_VISIBLE_DEVICES=1 python tools/test_net.py --config-file "configs/retrival.yaml" --ckpt "Log/retrival_e2e_add_retrieval_loss_10_colorjit_wordaug_b64_have_centerness_vot_veri/model_0072500.pth"
+#  CUDA_VISIBLE_DEVICES=0 python tools/test_net.py --config-file "configs/retrival_tsr.yaml"
+# CUDA_VISIBLE_DEVICES=1 python tools/test_net.py --config-file "configs/retrival_tsr_r18.yaml"
+# CUDA_VISIBLE_DEVICES=0 python tools/test_net.py --config-file "configs/retrival_attention.yaml"
+# CUDA_VISIBLE_DEVICES=0 python tools/test_net.py --config-file "configs/retrival_syn_svt.yaml"
+# CUDA_VISIBLE_DEVICES=0 python tools/test_net.py --config-file "configs/SiamRPN.yaml"
+# CUDA_VISIBLE_DEVICES=0 python tools/test_net.py --config-file "configs/retrival_finetune_usetextness.yaml"

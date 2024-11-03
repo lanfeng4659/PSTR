@@ -1,0 +1,1 @@
+from maskrcnn_benchmark.data.datasets.synthtext90k_crop import SynthText90kCropDateset
